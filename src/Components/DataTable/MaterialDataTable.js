@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import React from "react";
+import { DataGrid } from '@mui/x-data-grid';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -10,39 +11,40 @@ import Paper from '@mui/material/Paper';
 
 // https://www.youtube.com/watch?v=70wozHFsZFo Youtube video for creating your own data table with sorting etc.
 
+// https://mui.com/components/data-grid/
+
+
 export default function MaterialDataTable( { data }) {
     console.log(data)
+    const columns = [
+        { field: 'id', headerName: 'ID', minWidth: 30, flex: 1 },
+        { field: 'cmc_rank', headerName: 'CMC Rank', width: 70, flex: 1 },
+        { field: 'ticker', headerName: 'Crypto Coin', width: 200, flex: 1 },
+        { field: 'polarity', headerName: 'Polarity', type: 'number', width: 200, flex: 1 },
+        { field: 'subjectivity', headerName: 'Subjectivity', type: 'number', width: 200, flex: 1 },
+        { field: 'date', headerName: 'Date', width: 200, flex: 1 }
+    ];
 
     return (
-    <TableContainer component={Paper}>
-        <Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
-          <TableHead>
-            <TableRow>
-              <TableCell>Ticker</TableCell>
-              <TableCell align="right">Sentiment</TableCell>
-              <TableCell align="right">Subjectivity</TableCell>
-              <TableCell align="right">CMC Rank</TableCell>
-              <TableCell align="right">Date</TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {data.map((row) => (
-              <TableRow
-                key={row.id}
-                sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-              >
-                <TableCell component="th" scope="row">
-                  {row.ticker}
-                </TableCell>
-                <TableCell align="right">{row.polarity}</TableCell>
-                <TableCell align="right">{row.subjectivity}</TableCell>
-                <TableCell align="right">{row.cmc_rank}</TableCell>
-                <TableCell align="right">{row.date}</TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table>
-      </TableContainer>
+    <div style={{ height: 700, padding: '4%', display: 'flex', textAlign: 'center' }}>
+        <DataGrid
+        rows={data}
+        columns={columns}
+        pageSize={25}
+        rowsPerPageOptions={[25]}
+        checkboxSelection
+        sx={{
+            boxShadow: 2,
+            background: '#ECEFF4',
+            border: 2,
+            m: 2,
+            borderColor: 'primary.light',
+            '& .MuiDataGrid-cell:hover': {
+              color: 'primary.main',
+            },
+          }}
+        />
+    </div>
     )
 }
 

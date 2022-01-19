@@ -9,16 +9,17 @@ import TextField from '@mui/material/TextField';
 
 
 
-const LandingDataTable= (props) => {
+const LandingDataTable = (props) => {
     const [sentimentData, setSentimentData] = useState([])
     const [tableQuery, setTableQuery] = useState("")
     const { classes } = props;
     // const classes = styles();
 
     useEffect(() => {
-        fetch("https://w15tufm3h1.execute-api.us-east-2.amazonaws.com/Beta/ticker")
+        fetch("https://w15tufm3h1.execute-api.us-east-2.amazonaws.com/reference/ticker")
         .then((response) => response.json())
         .then((data) => {
+          console.log(data)
           setSentimentData(data);
         });
     }, []); // <-- Have to pass in [] here!
@@ -30,7 +31,7 @@ const LandingDataTable= (props) => {
     
 
     return (
-      <div>
+      <div className="App-Main">
         <div>
           <input 
             type="text" 
@@ -44,7 +45,6 @@ const LandingDataTable= (props) => {
         </div>
         <div>
           <LandingLineChart data={search(sentimentData)}/>
-
         </div>
       </div>
       );
