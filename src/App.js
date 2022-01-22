@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import './App.css';
 import LandingDataTable from './Components/LandingDataTable'
 import NavBar from './Components/NavBar'
+import TickerPage from './Components/TickerPage'
 
 function App() {
   return (
@@ -14,9 +15,7 @@ function App() {
               <LandingDataTable className="App-Main-Datatable"/>
             </Route>
             <Route path="/tickers">
-              <div>
-                Ticker Page
-              </div>
+              <TickerPage />
             </Route>
             <Route path="/funds">
               <div>

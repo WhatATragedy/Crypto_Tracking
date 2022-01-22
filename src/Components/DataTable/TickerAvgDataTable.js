@@ -14,7 +14,7 @@ import Paper from '@mui/material/Paper';
 // https://mui.com/components/data-grid/
 
 
-export default function MaterialDataTable( { data }) {
+export default function TickerAvgDataTable( { data }) {
     const [columnVisibilityModel, setColumnVisibilityModel] = React.useState({
       subjectivity: false,
       id: false
@@ -23,19 +23,16 @@ export default function MaterialDataTable( { data }) {
     const columns = [
         { field: 'id', headerName: 'ID', minWidth: 30, flex: 1, hide: true },
         { field: 'ticker', headerName: 'Crypto Coin', width: 200, flex: 1 },
-        { field: 'cmc_rank', headerName: 'CMC Rank', width: 70, flex: 1 },
-        { field: 'polarity', headerName: 'Polarity', type: 'number', width: 200, flex: 1 },
-        { field: 'subjectivity', headerName: 'Subjectivity', type: 'number', width: 200, flex: 1 },
-        { field: 'date', headerName: 'Date', width: 200, flex: 1 }
+        { field: 'avg', headerName: 'Average Sentiment', width: 70, flex: 1 },
     ];
 
     return (
-    <div style={{ height: 700, padding: '4%', display: 'flex', textAlign: 'center', width: '80%' }}>
+    <div style={{ height: 700, padding: '4%', display: 'flex', textAlign: 'center', width: '80%'}}>
         <DataGrid
           rows={data}
           columns={columns}
-          pageSize={25}
-          rowsPerPageOptions={[25]}
+          pageSize={50}
+          rowsPerPageOptions={[50]}
           checkboxSelection
           sx={{
             boxShadow: 2,

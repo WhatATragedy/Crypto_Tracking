@@ -11,3 +11,10 @@
     background-color: #ECEFF4;
     padding: 12px 20px 12px 40px;
 }
+.LandingTable {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
