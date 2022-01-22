@@ -1,8 +1,9 @@
 .App {
   text-align: center;
+  background-color: #2E3440;
 }
 
-.App-header {
+.App-body {
   background-color: #2E3440;
   min-height: 100vh;
   display: flex;
