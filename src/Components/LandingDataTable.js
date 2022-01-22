@@ -1,18 +1,12 @@
 import { useState, useEffect } from "react";
 import MaterialDataTable from './DataTable/MaterialDataTable'
 import './LandingDataTable.css'
-import LandingLineChart from './Charts/LineChart'
-import PropTypes from "prop-types";
-import Box from '@mui/material/Box';
-import { withStyles } from "@material-ui/core/styles";
-import TextField from '@mui/material/TextField';
 
 
 
-const LandingDataTable = (props) => {
+const LandingDataTable = ( ) => {
     const [sentimentData, setSentimentData] = useState([])
     const [tableQuery, setTableQuery] = useState("")
-    const { classes } = props;
     // const classes = styles();
 
     useEffect(() => {
@@ -44,7 +38,7 @@ const LandingDataTable = (props) => {
           <MaterialDataTable data={search(sentimentData)}/>
         </div>
         <div>
-          <LandingLineChart data={search(sentimentData)}/>
+          {/* <LandingLineChart data={search(sentimentData)}/> */}
         </div>
       </div>
       );
