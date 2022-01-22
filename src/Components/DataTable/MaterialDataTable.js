@@ -42,7 +42,7 @@ export default function MaterialDataTable( { data }) {
             background: '#ECEFF4',
             border: 2,
             m: 2,
-            borderColor: 'primary.light',
+            borderColor: 'white',
             '& .MuiDataGrid-cell:hover': {
               color: 'primary.main',
             },
