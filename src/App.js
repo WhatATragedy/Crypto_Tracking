@@ -4,7 +4,7 @@ import './App.css';
 import LandingDataTable from './Components/LandingDataTable'
 import NavBar from './Components/NavBar'
 import TickerPage from './Components/TickerPage'
-import { ReactQueryDevtools } from 'react-query/devtools'
+// import { ReactQueryDevtools } from 'react-query/devtools'
 
 const queryClient = new QueryClient()
 
@@ -34,7 +34,7 @@ function App() {
         </div>
       </div>
     </Router>
-    <ReactQueryDevtools />
+    {/* <ReactQueryDevtools /> */}
     </QueryClientProvider>
   );
 }

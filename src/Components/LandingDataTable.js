@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useQuery } from "react-query";
 import MaterialDataTable from './DataTable/MaterialDataTable'
 import './LandingDataTable.css'

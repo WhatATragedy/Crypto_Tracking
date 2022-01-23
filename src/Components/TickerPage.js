@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import ComboBox from './Search/TickerSearch';
 import TickerAvgDataTable from './DataTable/TickerAvgDataTable';
 import './TickerPage.css';
@@ -27,7 +27,8 @@ export default function TickerPage() {
 
     const dataFetched = result.some(query => query.isFetched);
 
-    const { data: averageData, isLoading } = useQuery("averageData", () => fetch("https://w15tufm3h1.execute-api.us-east-2.amazonaws.com/reference/averages")
+    // const { data: averageData, isLoading } = useQuery("averageData", () => fetch("https://w15tufm3h1.execute-api.us-east-2.amazonaws.com/reference/averages")
+    const { data: averageData } = useQuery("averageData", () => fetch("https://w15tufm3h1.execute-api.us-east-2.amazonaws.com/reference/averages")
     .then((response) => response.json()).then(data => {
         return data.map((item, index) => ({
             ...item,
