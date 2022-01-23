@@ -8,7 +8,7 @@
 
 .App-body {
   /* background-color: #434C5E; */
-  background-color: #fffff8;
+  background-color: #ECEFF4;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -17,7 +17,4 @@
   font-size: calc(10px + 2vmin);
   height: 5%;
   width: 100%;
-  background-repeat: no-repeat, repeat;
-  background-image: url("https://images.unsplash.com/photo-1539678786826-79e8b51b457a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
-  background-blend-mode: overlay;
 }

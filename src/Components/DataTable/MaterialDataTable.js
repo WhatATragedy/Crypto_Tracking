@@ -12,7 +12,7 @@ export default function MaterialDataTable( { data }) {
       subjectivity: false,
       id: false
     });
-    console.log(data)
+    // console.log(data)
     const columns = [
         { field: 'id', headerName: 'ID', minWidth: 30, flex: 1, hide: true },
         { field: 'ticker', headerName: 'Crypto Coin', width: 200, flex: 1 },
@@ -32,7 +32,7 @@ export default function MaterialDataTable( { data }) {
           checkboxSelection
           sx={{
             boxShadow: 2,
-            background: '#ECEFF4',
+            background: 'white',
             border: 2,
             m: 2,
             borderColor: 'white',
