@@ -1,9 +1,10 @@
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
 import { QueryClient, QueryClientProvider } from 'react-query';
 import './App.css';
-import LandingDataTable from './Components/LandingDataTable'
+// import LandingDataTable from './Components/LandingDataTable'
 import NavBar from './Components/NavBar'
 import TickerPage from './Components/TickerPage'
+import LandingPage from './Components/Pages/LandingPage'
 // import { ReactQueryDevtools } from 'react-query/devtools'
 
 const queryClient = new QueryClient()
@@ -13,13 +14,13 @@ function App() {
     <QueryClientProvider client={queryClient}>
     <Router>
       <div className="App">
-        <header className="header">
+        <div className="header">
           <NavBar/>
-        </header>
+        </div>
         <div className="App-body">
           <Switch>
             <Route exact path="/">
-              <LandingDataTable className="App-Main-Datatable"/>
+              <LandingPage className="App-Main-Datatable"/>
             </Route>
             <Route path="/tickers">
               <TickerPage />
@@ -32,9 +33,12 @@ function App() {
           </Switch>
           
         </div>
+        <div className='footer'>
+          Footer Here
+        </div>
       </div>
+      
     </Router>
-    {/* <ReactQueryDevtools /> */}
     </QueryClientProvider>
   );
 }

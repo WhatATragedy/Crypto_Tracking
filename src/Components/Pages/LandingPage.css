@@ -1,0 +1,25 @@
+.landing-top-row {
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+.start-search {
+    background-color: #ECEFF4;
+}
+.landing-middle-row {
+    display: flex;
+    width: 100%;
+}
+.landing-svg {
+    width: 70%;
+    margin-right: 5%;
+}
+.landing-svg img {
+    height: 90%;
+    width: 90%;
+}
+.landing-middle-info-card {
+    width: 30%;
+}
+.generic-card {
+    padding: 5%;
+}
