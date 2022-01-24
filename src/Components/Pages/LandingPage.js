@@ -1,5 +1,6 @@
 import { useState } from "react";
 // import { useQuery } from "react-query";
+import { ReactComponent as ProductTearDownSvg } from '../../undraw_product_teardown_re_m1pc.svg';
 import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -30,7 +31,8 @@ const LandingPage = ( ) => {
         </div>
         <div className="landing-middle-row">
             <div className="landing-svg">
-                <img src='./undraw_product_teardown_re_m1pc.svg' alt="Product Teardown"/>
+                <ProductTearDownSvg />
+                {/* <img src='../public/undraw_product_teardown_re_m1pc.svg' alt="Product Teardown"/> */}
             </div>
             <div className="landing-middle-info-card">
                 <div className='generic-card'>
