@@ -15,10 +15,10 @@ export default function MaterialDataTable( { data }) {
     // console.log(data)
     const columns = [
         { field: 'id', headerName: 'ID', minWidth: 30, flex: 1, hide: true },
-        { field: 'ticker', headerName: 'Crypto Coin', width: 200, flex: 1 },
-        { field: 'cmc_rank', headerName: 'CMC Rank', width: 70, flex: 1 },
+        { field: 'ticker', headerName: 'Crypto Coin', minWidth: 10, flex: 1 },
+        { field: 'cmc_rank', headerName: 'CMC Rank', minWidth: 10, flex: 1 },
         { field: 'polarity', headerName: 'Polarity', type: 'number', width: 200, flex: 1 },
-        { field: 'subjectivity', headerName: 'Subjectivity', type: 'number', width: 200, flex: 1 },
+        { field: 'subjectivity', headerName: 'Subjectivity', type: 'number', width: 200, flex: 1, hide: true },
         { field: 'date', headerName: 'Date', width: 200, flex: 1 }
     ];
 

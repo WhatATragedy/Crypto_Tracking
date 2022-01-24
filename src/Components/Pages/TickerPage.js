@@ -1,8 +1,8 @@
 import { useState } from "react";
-import ComboBox from './Search/TickerSearch';
-import TickerAvgDataTable from './DataTable/TickerAvgDataTable';
+import ComboBox from '../Search/TickerSearch';
+import TickerAvgDataTable from '../DataTable/TickerAvgDataTable';
 import './TickerPage.css';
-import MaterialDataTable from './DataTable/MaterialDataTable';
+import MaterialDataTable from '../DataTable/MaterialDataTable';
 import { useQueries, useQuery } from "react-query";
 import { Chart } from 'react-charts';
 import parseDate from 'postgres-date';

@@ -31,8 +31,10 @@ const LandingPage = ( ) => {
         </div>
         <div className="landing-middle-row">
             <div className="landing-svg">
-                <ProductTearDownSvg />
-                {/* <img src='../public/undraw_product_teardown_re_m1pc.svg' alt="Product Teardown"/> */}
+                <ProductTearDownSvg 
+                    // viewBox="0 0 50 50px"
+                />
+                {/* <img src='../../undraw_product_teardown_re_m1pc.svg' alt="Product Teardown"/> */}
             </div>
             <div className="landing-middle-info-card">
                 <div className='generic-card'>
