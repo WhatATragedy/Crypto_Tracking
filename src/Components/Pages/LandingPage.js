@@ -30,7 +30,7 @@ const LandingPage = ( ) => {
         </div>
         <div className="landing-middle-row">
             <div className="landing-svg">
-                <img src='./undraw_product_teardown_re_m1pc.svg'/>
+                <img src='./undraw_product_teardown_re_m1pc.svg' alt="Product Teardown"/>
             </div>
             <div className="landing-middle-info-card">
                 <div className='generic-card'>
