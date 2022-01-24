@@ -1,35 +1,22 @@
 import { useState } from "react";
-import { useQuery } from "react-query";
+// import { useQuery } from "react-query";
 import * as React from 'react';
-import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import './LandingPage.css';
 // import MaterialDataTable from './DataTable/MaterialDataTable'
-
-const bull = (
-    <Box
-      component="span"
-      sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
-    >
-      •
-    </Box>
-  );
-
 
 const LandingPage = ( ) => {
     const [tableQuery, setTableQuery] = useState("")
     // const classes = styles();
 
-    const { data: sentimentData } = useQuery("sentimentData", () => fetch("https://w15tufm3h1.execute-api.us-east-2.amazonaws.com/reference/ticker")
-    .then((response) => response.json()), { initialData: [] });
+    // const { data: sentimentData } = useQuery("sentimentData", () => fetch("https://w15tufm3h1.execute-api.us-east-2.amazonaws.com/reference/ticker")
+    // .then((response) => response.json()), { initialData: [] });
 
-    function search(rows = []) {
-      return rows.filter(row => row.ticker.toLowerCase().indexOf(tableQuery.toLowerCase()) > -1)
-    }
+    // function search(rows = []) {
+    //   return rows.filter(row => row.ticker.toLowerCase().indexOf(tableQuery.toLowerCase()) > -1)
+    // }
   
     return (
       <div className="App-Main">
