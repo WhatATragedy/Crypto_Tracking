@@ -1,27 +1,22 @@
 .App {
-  text-align: center;
   background-color: #434C5E;
   margin: auto;
   min-height: 100vh;
 }
+
 .header {
   background-color: linear-gradient(#2E3440,#4C566A) ;
 }
 
 .App-body {
-  /* background-color: #434C5E; */
-  /* background-color: #ECEFF4; */
   border-radius: 8px;
   margin: auto;
-  background: linear-gradient(#4C566A, #D8DEE9);
+  background: linear-gradient(#D8DEE9, #4C566A);
   width: 98%;
-  margin: 1%;
-  margin-bottom: 20px;
-  height: 100%;
   min-height: 80vh;
 }
 .footer {
-  padding: 0%;
-  height: 10%;
-  width: 100%;
+  padding: 2%;
+  height: 5%;
+  width: 96%;
 }

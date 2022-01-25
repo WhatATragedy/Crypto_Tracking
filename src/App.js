@@ -11,6 +11,7 @@ import FundPage from './Components/Pages/FundPage';
 const queryClient = new QueryClient()
 
 function App() {
+
   return (
     <QueryClientProvider client={queryClient}>
     <Router>

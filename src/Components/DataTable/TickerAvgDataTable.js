@@ -20,7 +20,23 @@ export default function TickerAvgDataTable( { data }) {
 
     return (
     <div style={{ height: 700, padding: '4%', display: 'flex', textAlign: 'center', width: '80%'}}>
-        <DataGrid
+      <DataGrid 
+        autoHeight {...data} 
+        rows={data} 
+        columns={columns}
+        sx={{
+          boxShadow: 2,
+          background: 'white',
+          border: 2,
+          m: 2,
+          borderColor: 'white',
+          '& .MuiDataGrid-cell:hover': {
+            color: 'primary.main',
+          },
+        }}
+      />
+
+        {/* <DataGrid
           rows={data}
           columns={columns}
           pageSize={50}
@@ -40,7 +56,7 @@ export default function TickerAvgDataTable( { data }) {
           onColumnVisibilityModelChange={(newModel) =>
             setColumnVisibilityModel(newModel)
           }
-        />
+        /> */}
     </div>
     )
 }

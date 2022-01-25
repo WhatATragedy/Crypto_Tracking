@@ -8,7 +8,14 @@ import './FundCards.css';
 export default function FundCards( { props }  ) {
     console.log(props)
     const cardsArray = props.map(fund => (
-        <Card sx={{ width:'20%', height: '15%', margin: 'auto'}}>
+        <Card 
+          sx={{
+            width:'20%', 
+            height: '15%',
+            margin: 'auto', 
+            border: 2, 
+            borderColor: '#6C63FF'
+          }}>
             <CardMedia
             component="img"
             height="40%"

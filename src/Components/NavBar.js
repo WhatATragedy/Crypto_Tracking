@@ -1,14 +1,71 @@
 import { Link } from 'react-router-dom'
 import './NavBar.css';
+import Button from '@mui/material/Button';
 
 const Navbar = () => {
     return (
       <nav className="navbar">
-        <h1>Sentonomics..</h1>
+        <div className="logo"/>
+        <div className="name">Sentonomics</div>
         <div className="links">
-          <Link to='/'>Home</Link>
-          <Link to='/tickers'>Tickers</Link>
-          <Link to='/funds'>VC Funds</Link>
+          <Button 
+            component={Link}
+            to="/"
+            variant="contained"
+            sx={{
+              minWidth: '100px',
+              boxShadow: 2,
+              background: 'grey',
+              m:1,
+              '&:hover': {
+                backgroundColor: '#D8DEE9',
+                color: "black",
+                borderBottom: 4,
+                borderColor: '#6C63FF',
+
+              },
+            }}
+          >
+            Home
+          </Button>
+          <Button 
+            component={Link} 
+            to="/tickers" 
+            variant="contained" 
+            sx={{
+              minWidth: '100px',
+              boxShadow: 2,
+              background: 'grey',
+              m:1,
+              '&:hover': {
+                backgroundColor: '#D8DEE9',
+                color: "black",
+                borderBottom: 4,
+                borderColor: '#6C63FF',
+
+              },
+            }}
+          >
+            Tickers
+          </Button>
+          <Button 
+            component={Link} 
+            to="/funds" 
+            variant="contained" 
+            sx={{
+              minWidth: '100px',
+              boxShadow: 1,
+              background: 'grey',
+              m:1,
+              '&:hover': {
+                backgroundColor: '#D8DEE9',
+                color: "black",
+                borderBottom: 4,
+                borderColor: '#6C63FF',
+
+              },
+            }}
+          >VC Funds</Button>
         </div>
       </nav>
     );

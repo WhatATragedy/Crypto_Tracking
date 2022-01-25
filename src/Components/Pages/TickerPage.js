@@ -15,7 +15,7 @@ const fetchQuery = async ({ queryKey }) => {
 const primaryAxis = { getValue: datum => datum.date, scaleType: "localTime" };
 const secondaryAxes = [{ getValue: datum => datum.polarity , scaleType: "linear", elementType: "line" }];
 
-export default function TickerPage() {
+export default function TickerPage( ) {
     const [tickers, setTickers] = useState([]);
 
      const { data: allTickers } = useQuery("allTickers", () => fetch("https://w15tufm3h1.execute-api.us-east-2.amazonaws.com/reference/ticker/get-ticker-names")
