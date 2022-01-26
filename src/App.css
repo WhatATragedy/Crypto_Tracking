@@ -11,10 +11,6 @@
 .wavey {
   background-image: url('./layered-waves-haikei.svg');
 }
-p {
-  color: white;
-}
-
 
 .App-body {
   border-radius: 8px;

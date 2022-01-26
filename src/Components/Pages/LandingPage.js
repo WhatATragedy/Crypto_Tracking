@@ -60,57 +60,67 @@ const LandingPage = ( ) => {
         <hr></hr>
         <div className='middle-row'>
             <img src={ProductTearDownSvg} width='40%' alt="Product Tear Down"></img>
-            <div className='generic-card'>
-                <Card 
-                    sx={{ 
-                        minWidth: 100,
-                        m: 'auto',
-                        boxShadow: 2,
-                        background: '#4C566A',
-                        color: '#D8DEE9',
-                        border: 2, 
-                        borderColor: '#FA7268',
-                        borderRadius: '5px'
-                    }}
-                >
-                    <CardContent>
-                        <Typography sx={{ fontSize: 22 }} gutterBottom>
-                        Crypto Coins Tracked
-                        </Typography>
-                        <Typography variant="h5" component="div">
-                        550
-                        </Typography>
-                    </CardContent>
-                    {/* <CardActions>
-                        <Button size="small">Learn More</Button>
-                    </CardActions> */}
-                </Card>
-            </div>
-            <div className="generic-card">
-                <Card 
-                    sx={{ 
-                        minWidth: 100,
-                        boxShadow: 2,
-                        m: 'auto',
-                        background: '#4C566A',
-                        color: '#D8DEE9',
-                        border: 2, 
-                        borderColor: '#FA7268',
-                        borderRadius: '5px'
-                    }}
-                >
-                    <CardContent sx={{ mx: "auto" }}>
-                        <Typography sx={{ fontSize: 22}} gutterBottom>
-                            Platforms Analysed
-                        </Typography>
-                        <Typography variant="h5" component="div">
-                            1
-                        </Typography>
-                    </CardContent>
-                    {/* <CardActions>
-                        <Button size="small">Learn More</Button>
-                    </CardActions> */}
-                </Card>
+            <div className='middle-row-right'>
+                <h2> The Sentonomics Platform </h2>
+
+                        
+
+
+
+                <div className='middle-row-right-cards'>
+                    <div className='generic-card'>
+                        <Card 
+                            sx={{ 
+                                minWidth: 100,
+                                m: 'auto',
+                                boxShadow: 2,
+                                background: '#4C566A',
+                                color: '#D8DEE9',
+                                border: 2, 
+                                borderColor: '#FA7268',
+                                borderRadius: '5px'
+                            }}
+                        >
+                            <CardContent>
+                                <Typography sx={{ fontSize: 22 }} gutterBottom>
+                                Crypto Coins Tracked
+                                </Typography>
+                                <Typography variant="h5" component="div">
+                                550
+                                </Typography>
+                            </CardContent>
+                            {/* <CardActions>
+                                <Button size="small">Learn More</Button>
+                            </CardActions> */}
+                        </Card>
+                    </div>
+                    <div className="generic-card">
+                        <Card 
+                            sx={{ 
+                                minWidth: 100,
+                                boxShadow: 2,
+                                m: 'auto',
+                                background: '#4C566A',
+                                color: '#D8DEE9',
+                                border: 2, 
+                                borderColor: '#FA7268',
+                                borderRadius: '5px'
+                            }}
+                        >
+                            <CardContent sx={{ mx: "auto" }}>
+                                <Typography sx={{ fontSize: 22}} gutterBottom>
+                                    Platforms Analysed
+                                </Typography>
+                                <Typography variant="h5" component="div">
+                                    1
+                                </Typography>
+                            </CardContent>
+                            {/* <CardActions>
+                                <Button size="small">Learn More</Button>
+                            </CardActions> */}
+                        </Card>
+                    </div>
+                </div>
             </div>
         </div>
     </div> 

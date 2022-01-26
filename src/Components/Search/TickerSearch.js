@@ -27,13 +27,13 @@ const useStyles = makeStyles((theme) => ({
         paddingLeft: 6
       },
       "& .MuiOutlinedInput-notchedOutline": {
-        borderColor: "#6C63FF"
+        borderColor: "#FA7268"
       },
       "&:hover .MuiOutlinedInput-notchedOutline": {
-        borderColor: "#6C63FF"
+        borderColor: "#FA7268"
       },
       "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
-        borderColor: "#6C63FF"
+        borderColor: "#FA7268"
       }
     }
   }));
@@ -60,9 +60,6 @@ export default function ComboBox( { data, onChange } ) {
                     variant="outlined"
                     label="Crypto"
                     // color='white'
-                    sx = {{
-                        "color": "white"
-                    }}
                     fullWidth
                 />
                 )}
