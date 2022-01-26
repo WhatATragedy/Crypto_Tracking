@@ -11,10 +11,10 @@
 .wavey {
   background-image: url('./layered-waves-haikei.svg');
 }
-
-.header {
-  background-color: linear-gradient(#2E3440,#4C566A) ;
+p {
+  color: white;
 }
+
 
 .App-body {
   border-radius: 8px;

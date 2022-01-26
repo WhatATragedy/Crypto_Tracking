@@ -1,12 +1,13 @@
 import { Link } from 'react-router-dom'
 import './NavBar.css';
+import { default as logo } from '../logo.svg';
 import Button from '@mui/material/Button';
 
 const Navbar = () => {
     return (
       <nav className="navbar">
-        <div className="logo"><img src="../logo.svg" alt="Logo"></img></div>
-        <div className="name">Sentonomics</div>
+        <div className="logo"><img src={logo} alt="Logo"></img></div>
+        <h1 className="name">Sentonomics</h1>
         <div className="links">
           <Button 
             component={Link}
