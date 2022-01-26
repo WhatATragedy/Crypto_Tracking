@@ -2,6 +2,14 @@
   background-color: #434C5E;
   margin: auto;
   min-height: 100vh;
+  /* aspect-ratio: 960/540; */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden; /* Hide scrollbars */
+}
+.wavey {
+  background-image: url('./layered-waves-haikei.svg');
 }
 
 .header {
@@ -17,6 +25,25 @@
 }
 .footer {
   padding: 2%;
-  height: 5%;
+  height: 2%;
   width: 96%;
+}
+::-webkit-scrollbar{
+  width: 12px
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#4C566A, transparent);
+  border-radius: 6px
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(#FA7268, transparent)
+}
+.App::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.App {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }

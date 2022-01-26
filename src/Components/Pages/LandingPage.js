@@ -1,10 +1,11 @@
 
-import { ReactComponent as ProductTearDownSvg } from '../../undraw_product_teardown_re_m1pc.svg';
+// import { ReactComponent as ProductTearDownSvg } from '../../undraw_product_teardown_re_m1pc.svg';
 import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import './LandingPage.css';
+import { default as ProductTearDownSvg } from '../../undraw_product_teardown_re_m1pc.svg';
 
 
 const LandingPage = ( ) => {
@@ -12,9 +13,10 @@ const LandingPage = ( ) => {
     return (
       <div className="app-main">
             <div className="landing-svg">
-                <ProductTearDownSvg 
+                <img src={ProductTearDownSvg} width='100%' alt="Product Tear Down"></img>
+                {/* <ProductTearDownSvg 
                     // viewBox="0 0 50 50px"
-                />
+                /> */}
                 {/* <img src='../../undraw_product_teardown_re_m1pc.svg' alt="Product Teardown"/> */}
             </div>
             <div className="landing-middle-info-card">
@@ -28,7 +30,7 @@ const LandingPage = ( ) => {
                             background: '#4C566A',
                             color: '#D8DEE9',
                             border: 2, 
-                            borderColor: '#6C63FF'
+                            borderColor: '#FA7268'
                         }}
                     >
                         <CardContent>
@@ -54,7 +56,7 @@ const LandingPage = ( ) => {
                         background: '#4C566A',
                         color: '#D8DEE9',
                         border: 2, 
-                        borderColor: '#6C63FF'
+                        borderColor: '#FA7268'
                     }}
                 >
                     <CardContent sx={{ mx: "auto" }}>

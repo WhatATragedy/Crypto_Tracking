@@ -5,7 +5,7 @@ import Button from '@mui/material/Button';
 const Navbar = () => {
     return (
       <nav className="navbar">
-        <div className="logo"/>
+        <div className="logo"><img src="../logo.svg" alt="Logo"></img></div>
         <div className="name">Sentonomics</div>
         <div className="links">
           <Button 
@@ -21,7 +21,7 @@ const Navbar = () => {
                 backgroundColor: '#D8DEE9',
                 color: "black",
                 borderBottom: 4,
-                borderColor: '#6C63FF',
+                borderColor: '#FA7268',
 
               },
             }}
@@ -41,7 +41,7 @@ const Navbar = () => {
                 backgroundColor: '#D8DEE9',
                 color: "black",
                 borderBottom: 4,
-                borderColor: '#6C63FF',
+                borderColor: '#FA7268',
 
               },
             }}
@@ -61,7 +61,7 @@ const Navbar = () => {
                 backgroundColor: '#D8DEE9',
                 color: "black",
                 borderBottom: 4,
-                borderColor: '#6C63FF',
+                borderColor: '#FA7268',
 
               },
             }}

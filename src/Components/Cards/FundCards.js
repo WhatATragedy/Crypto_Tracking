@@ -14,7 +14,7 @@ export default function FundCards( { props }  ) {
             height: '15%',
             margin: 'auto', 
             border: 2, 
-            borderColor: '#6C63FF'
+            borderColor: '#FA7268'
           }}>
             <CardMedia
             component="img"
